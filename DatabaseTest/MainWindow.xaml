@@ -5,10 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DatabaseTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="1000">
     <Grid>
-        <Button Content="See Assests" HorizontalAlignment="Left" Margin="266,180,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="266,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-
+        <Button Content="See Assests" HorizontalAlignment="Left" Margin="30,257,0,0" VerticalAlignment="Top" Width="91" Click="Assets_Click"/>
+        <TextBlock x:Name="AssetData" HorizontalAlignment="Left" Height="110" Margin="30,282,0,0" TextWrapping="Wrap" Text="[Assets here]" VerticalAlignment="Top" Width="425"/>
+        <Button Content="See Employees" HorizontalAlignment="Left" Margin="30,55,0,0" VerticalAlignment="Top" Width="91" Click="Employee_Click"/>
+        <TextBlock x:Name="EmployeeData" HorizontalAlignment="Left" Height="110" Margin="30,82,0,0" TextWrapping="Wrap" Text="[Employees here]" VerticalAlignment="Top" Width="425" />
+        <TextBox x:Name="EmployeeIDText" HorizontalAlignment="Left" Margin="30,453,0,0" TextWrapping="Wrap" Text="[Enter Employee ID]" VerticalAlignment="Top" Width="127" Height="33"/>
+        <TextBox x:Name="LastNameText" HorizontalAlignment="Left" Margin="175,453,0,0" TextWrapping="Wrap" Text="[Enter Last Name]" VerticalAlignment="Top" Width="181" Height="33"/>
+        <TextBox x:Name="FirstNameText" HorizontalAlignment="Left" Margin="375,453,0,0" TextWrapping="Wrap" Text="[Enter First Name]" VerticalAlignment="Top" Width="182" Height="33" RenderTransformOrigin="0.273,0.465"/>
+        <Button Content="Add Employee" HorizontalAlignment="Left" Margin="573,461,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" RenderTransformOrigin="1.11,0.553"/>
+        <Label Content="Add an Employee to the Database" HorizontalAlignment="Left" Margin="23,408,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontFamily="Source Code Pro Semibold"/>
+        <Label Content="List Employees in DataBase" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontFamily="Source Code Pro Semibold" RenderTransformOrigin="0.434,0.531"/>
+        <Label Content="List Assets in DataBase" HorizontalAlignment="Left" Margin="23,208,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontFamily="Source Code Pro Semibold" RenderTransformOrigin="0.434,0.531"/>
+        <TextBox x:Name="AssetIdText" HorizontalAlignment="Left" Margin="208,566,0,0" TextWrapping="Wrap" Text="[Enter Asset ID]" VerticalAlignment="Top" Width="181" Height="33"/>
+        <TextBox x:Name="DescriptionText" HorizontalAlignment="Left" Margin="410,566,0,0" TextWrapping="Wrap" Text="[Enter Description]" VerticalAlignment="Top" Width="182" Height="33" RenderTransformOrigin="0.273,0.465"/>
+        <Button Content="Add Asset" HorizontalAlignment="Left" Margin="610,573,0,0" VerticalAlignment="Top" Width="95" Click="Add_Asset" RenderTransformOrigin="1.11,0.553"/>
+        <Label Content="Add an Asset to the Database" HorizontalAlignment="Left" Margin="23,515,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontFamily="Source Code Pro Semibold"/>
+        <TextBox x:Name="EmployeeIDText2" HorizontalAlignment="Left" Margin="30,566,0,0" TextWrapping="Wrap" Text="[Enter Existing Employee ID]" VerticalAlignment="Top" Width="156" Height="33"/>
+        <TextBlock HorizontalAlignment="Left" Height="89" Margin="745,472,0,0" TextWrapping="Wrap" 
+                 Text="Warning! Extra credit works, but I did not have time to implement excpetion handling if invalid input types are entered." VerticalAlignment="Top" Width="237" FontFamily="Nonstop" TextDecorations="{x:Null}" Foreground="Red" LineHeight="16"/>
     </Grid>
 </Window>
